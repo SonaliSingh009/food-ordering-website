@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - FoodExpress</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-utensils logo-icon"></i>
+                <span>FoodExpress</span>
+            </a>
+            
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <button class="cart-button" id="cartButton">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart" id="cart">
+            <!-- Same cart structure as index.html -->
+        </div>
+    </div>
+
+    <main class="menu-page">
+        <h1>Our Menu</h1>
+        
+        <div class="menu-categories" id="menuCategories">
+            <button class="active" data-category="burgers">Burgers</button>
+            <button data-category="pizzas">Pizzas</button>
+            <button data-category="sushi">Sushi</button>
+            <button data-category="desserts">Desserts</button>
+        </div>
+
+        <div class="menu-items" id="menuItems">
+            <!-- Menu items will be loaded by JavaScript -->
+        </div>
+    </main>
+
+    <div class="customization-modal" id="customizationModal">
+        <div class="modal-content">
+            <h2 id="modalItemName">Customize Item</h2>
+            <form id="customizationForm">
+                <!-- Customization options will be added by JavaScript -->
+                <div class="modal-actions">
+                    <button type="button" class="button secondary" id="cancelCustomization">
+                        Cancel
+                    </button>
+                    <button type="submit" class="button primary">
+                        Add to Cart
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
